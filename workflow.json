@@ -1,0 +1,60 @@
+{
+  "name": "B2B Lead & Domain Intelligence Suite Enrichment Pipeline",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "start-node-1",
+      "name": "When clicking Execute Workflow",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/deepaksheoran172~b2b-lead-domain-intelligence-suite/run-sync-get-dataset-items",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "token",
+              "value": "={{ $env.APIFY_TOKEN || 'YOUR_APIFY_API_TOKEN' }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "body": "{\"domains\": [\"stripe.com\", \"linear.app\", \"mejuri.com\"], \"extractContacts\": true, \"verifyEmails\": true, \"auditDomainSecurity\": true, \"detectTechSignals\": true}",
+        "options": {
+          "timeout": 300000
+        }
+      },
+      "id": "apify-node-2",
+      "name": "Apify: B2B Lead Intelligence Suite",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        460,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "When clicking Execute Workflow": {
+      "main": [
+        [
+          {
+            "node": "Apify: B2B Lead Intelligence Suite",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
