@@ -87,6 +87,16 @@ You waste 4 hours stitching together CSVs in Excel, only to discover invalid ema
 
 ---
 
+## 🚀 Quickstart: 1-Line cURL (Test in 2 Seconds)
+
+```bash
+curl -X POST "https://api.apify.com/v2/acts/deepaksheoran172~b2b-lead-domain-intelligence-suite/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"domains": ["stripe.com", "mejuri.com"], "extractContacts": true, "verifyEmails": true, "auditDomainSecurity": true, "detectTechSignals": true}'
+```
+
+---
+
 ## 🤖 Claude Desktop & Cursor MCP Server Setup
 
 Turn your AI agent into an autonomous B2B researcher. Add to `claude_desktop_config.json`:
@@ -137,6 +147,14 @@ Convert this actor into a perpetual weekly outbound prospecting pipeline:
 | **Our Master Suite (Apify)** | **✅** | **✅** | **✅** | **✅** | **$8.00** |
 
 👉 **You save 96% while getting 4x the data depth in a single run.**
+
+---
+
+## 🛡️ 100% Automated Self-Service & Zero-DM Guarantee
+
+- **Pure Self-Service:** Runs autonomously via Apify Cloud API. No sales calls, manual configuration, or onboarding tickets needed.
+- **Pay-Per-Result:** Only successful output items are billed ($0.008 per enriched lead). Zero-charge on failed executions.
+- **API Documentation:** For key creation, webhooks, and concurrency settings, see [Apify Docs](https://docs.apify.com/platform/actors/running/api).
 
 ---
 
