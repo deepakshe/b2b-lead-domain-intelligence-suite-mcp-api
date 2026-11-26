@@ -1,6 +1,7 @@
 # All-in-One B2B Lead & Domain Intelligence Suite (Contacts, MX & Security)
 
 [![Apify Store](https://img.shields.io/badge/Apify_Store-Run_on_Apify-blue?style=for-the-badge&logo=apify)](https://apify.com/deepaksheoran172/b2b-lead-domain-intelligence-suite)
+[![deepakshe/b2b-lead-domain-intelligence-suite-mcp-api MCP server](https://glama.ai/mcp/servers/deepakshe/b2b-lead-domain-intelligence-suite-mcp-api/badges/score.svg)](https://glama.ai/mcp/servers/deepakshe/b2b-lead-domain-intelligence-suite-mcp-api)
 [![MCP Server](https://img.shields.io/badge/MCP-Model_Context_Protocol-purple?style=for-the-badge)](https://modelcontextprotocol.io)
 [![Pricing](https://img.shields.io/badge/Pricing-%240.008_per_Lead-green?style=for-the-badge)](https://apify.com/deepaksheoran172/b2b-lead-domain-intelligence-suite)
 [![Maintenance](https://img.shields.io/badge/Status-100%25_Operational-emerald?style=for-the-badge)](https://apify.com/deepaksheoran172/b2b-lead-domain-intelligence-suite)

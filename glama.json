@@ -1,0 +1,8 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "deepakshe"
+  ],
+  "name": "b2b-lead-domain-intelligence-suite-mcp-api",
+  "description": "Extracts executive contacts, validates emails via MX/DNS, audits DMARC/SPF/SSL, and detects tech stack."
+}

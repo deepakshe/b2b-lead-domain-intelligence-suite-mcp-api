@@ -1,0 +1,18 @@
+# Smithery.ai MCP Server Manifest
+name: b2b-lead-domain-intelligence-suite-mcp-api
+version: 1.0.0
+description: "Extracts executive contacts, validates emails via MX/DNS, audits DMARC/SPF/SSL, and detects tech stack."
+startCommand:
+  type: stdio
+  config:
+    command: npx
+    args:
+      - "-y"
+      - "@apify/actors-mcp-server"
+      - "--actors"
+      - "deepaksheoran172/b2b-lead-domain-intelligence-suite"
+    env:
+      APIFY_TOKEN:
+        type: string
+        description: "Your Apify API Token ($5/month free credits included)"
+        required: true
