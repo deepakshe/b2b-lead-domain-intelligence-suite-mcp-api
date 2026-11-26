@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.deepakshe/b2b-lead-domain-intelligence-suite-mcp-api",
   "title": "All-in-One B2B Lead & Corporate Domain Intelligence Suite MCP Server",
-  "description": "Extracts executive contacts, validates emails via MX/DNS, audits DMARC/SPF/SSL, and detects tech stack.",
+  "description": "Enrich B2B domains with executive contacts, MX email validation, DMARC/SPF & tech stack.",
   "version": "1.0.0",
   "websiteUrl": "https://apify.com/deepaksheoran172/b2b-lead-domain-intelligence-suite",
   "repository": {
@@ -14,7 +14,7 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@apify/actors-mcp-server",
-      "version": "latest",
+      "version": "0.23.0",
       "runtimeHint": "npx",
       "transport": {
         "type": "stdio"
@@ -31,10 +31,8 @@
   ],
   "remotes": [
     {
-      "transport": {
-        "type": "streamable-http",
-        "url": "https://mcp.apify.com/?tools=deepaksheoran172/b2b-lead-domain-intelligence-suite"
-      }
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=deepaksheoran172/b2b-lead-domain-intelligence-suite"
     }
   ]
 }
